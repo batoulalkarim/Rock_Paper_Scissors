@@ -46,3 +46,13 @@ const determineWinner = (userChoice, computerChoice) => {
         return 'Congratulations, you won!';
     }
 };
+const playGame = () => {
+    const userChoice = getUserChoice ('bomb');
+    const computerChoice = getComputerChoice();
+    console.log('You threw:' + userChoice);
+    console.log('The computer threw:' + computerChoice);
+
+    console.log(determineWinner(userChoice, computerChoice));
+};
+
+playGame();
